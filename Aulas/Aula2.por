@@ -1,9 +1,10 @@
 programa
-{ 
+{
+ 
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		//Aula2
 	}
 }
 /* $$$ Portugol Studio $$$ 
