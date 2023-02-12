@@ -9,8 +9,6 @@ programa
 	funcao inicio()
 	{
 		
-		
-		
 	}
 }
 
@@ -65,13 +63,47 @@ programa
 		real hipotenusa = Matematica.raiz(potenciaHipot, 2)
 
 		escreva("A hipotenusa do triângulo retângulo ", hipotenusa)
+
+	Exercício proposto 4:
+	
+		cadeia nomeUsuario
+		inteiro senhaUsuario
+
+		escreva("Informe o nome de usuário: ")
+		leia(nomeUsuario)
+		escreva("Informe a senha do usuário: ")
+		leia(senhaUsuario)
+		
+		se (nomeUsuario == "Admin" e senhaUsuario == 123){
+			escreva("Login realizado com sucesso!")
+		} senao {
+			escreva("Falha no login.....")
+		}
+
+		
+		Exercício proposto 5
+		
+		inteiro numero, validacao
+
+		escreva("Informe o número: ")
+		leia(numero)
+
+		validacao = numero % 2
+		escreva("Resultado = ", validacao)
+
+		se (validacao==0){
+			escreva("\nNumero par!")
+		} senao{
+			escreva("\nNumero ímpar")
+			
+		}
 */
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 923; 
+ * @POSICAO-CURSOR = 178; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
