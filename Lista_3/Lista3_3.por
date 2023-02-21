@@ -4,26 +4,41 @@ programa
 	funcao inicio()
 	{
 		inteiro salario, numeroDeFilhos, contador = 1
-		inteiro mediaFilhos = 0, somaFilhos = 0, somaSalario = 0, mediaSalario = 0, percentual = 0, testeSalario = 0
-			
+		inteiro mediaFilhos = 0, somaFilhos = 0, somaSalario = 0, mediaSalario = 0, testeSalario = 0, testeSalario2 = 0, percentual = 0
+		real percentualSalario = 0.0
 		
-		enquanto(contador<=4){
+		enquanto(contador<=20){
 			
 			escreva("\n" + contador + "ª Família")
 			escreva("\n\nInforme o seu salário: ")
 			leia(salario)
 			escreva("Informe o número de filhas/filhos: ")
 			leia(numeroDeFilhos)
+			
+			se(salario > testeSalario2){
+				testeSalario2 = salario
+				escreva("Maior salário: ", testeSalario2, "\n")
+			}
+			
 			somaSalario= somaSalario + salario
 			somaFilhos= somaFilhos + numeroDeFilhos
 			mediaSalario = somaSalario/contador
 			mediaFilhos = somaFilhos/contador
-			percentual = percentual+(salario/somaSalario)*100
+			
+			se(salario<1000 e salario>0){
+				 percentual = (salario/somaSalario)*100
+				 percentualSalario = percentual+percentualSalario
+				 
+				escreva("Percentual: ", percentualSalario)
+			}
+			
 			contador++
 		
 		}
-		escreva("\nMaior numero ", testeSalario)
-		escreva("\n\nMédia salarial de " + contador + " famílias " + mediaSalario)
+
+		limpa()
+		escreva("\nMaior salário: ", testeSalario2)
+		escreva("\nMédia salarial de " + contador + " famílias " + mediaSalario)
 		escreva("\nMédia de filhos por habitantes = ", mediaFilhos)
 		escreva("\nPercentual de pessoas com salário até R$1000,00 = ", percentual, " %")		
 	}
@@ -33,9 +48,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 616; 
+ * @POSICAO-CURSOR = 274; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {salario, 6, 10, 7}-{contador, 6, 35, 8}-{somaSalario, 7, 43, 11}-{testeSalario, 7, 94, 12};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
