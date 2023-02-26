@@ -11,9 +11,9 @@ programa
 			somaNotas = somaNotas+nota
 			mediaNotas = somaNotas/i
 		}
-			se(mediaNotas>=5){
-				escreva("\nAluno(a) aprovado(a)!")
-			} senao escreva("\nAluno(a) reprovado(a)!")
+		se(mediaNotas>=5){
+			escreva("\nAluno(a) aprovado(a)!")
+		} senao escreva("\nAluno(a) reprovado(a)!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 336; 
+ * @POSICAO-CURSOR = 249; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
