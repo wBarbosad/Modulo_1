@@ -4,11 +4,11 @@ programa
 	funcao inicio()
 	{
 		cadeia usuario
-		inteiro senha, contador=0
+		inteiro senha, contador=1
 
 		faca
 		{
-			escreva("Informe o nome de usuário: ")
+			escreva("\nInforme o nome de usuário: ")
 			leia(usuario)
 			escreva("Informe a senha do usuário: ")
 			leia(senha)
@@ -16,14 +16,14 @@ programa
 				se(usuario=="Admin" e senha==123)
 				{
 					escreva("Login realizado com sucesso!")
-					contador = 3;
-				} senao{
-					escreva("Falha no login")
-					escreva("Usuário ou senha incorretas\n
-					contador++
-				}
-			
-		} enquanto(contador!=3)
+					contador = 4
+					escreva("\nBem-vindo, " + usuario + "!")
+				} senao
+					{
+						escreva("\nFalha no login")
+					}
+					
+		} enquanto(contador<4)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 566; 
+ * @POSICAO-CURSOR = 428; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
