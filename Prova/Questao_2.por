@@ -5,15 +5,13 @@ programa
 	{
 		real somaNotas = 0, nota, mediaNotas=0
 		
-		para(inteiro i = 1; i<5; i++)
-		{
+		para(inteiro i = 1; i<5; i++){
 			escreva("Informe a ", i, "ª nota: ")
 			leia(nota)
 			somaNotas = somaNotas+nota
 			mediaNotas = somaNotas/i
 		}
-			se(mediaNotas>=5)
-			{
+			se(mediaNotas>=5){
 				escreva("\nAluno(a) aprovado(a)!")
 			} senao escreva("\nAluno(a) reprovado(a)!")
 	}
@@ -23,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 37; 
+ * @POSICAO-CURSOR = 336; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -7,16 +7,14 @@ programa
 
 		escreva("Informe um número: ")
 		leia(numero)
-		para(inteiro contador = 0; contador<=numero; contador++)
-		{
+		para(inteiro contador = 0; contador<=numero; contador++){
 			ValidacaoImpar = contador%2
-				se(ValidacaoImpar!=0)
-				{
-					escreva("\n", contador)
-					soma = soma+contador
-				} 
+			se(ValidacaoImpar!=0){		
+				escreva("\n", contador)
+				soma = soma+contador
+			} 
 		}
-			escreva("\n\nSoma = ", soma)
+		escreva("\n\nSoma = ", soma)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 128; 
+ * @POSICAO-CURSOR = 306; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
