@@ -17,10 +17,13 @@ programa
 				{
 					escreva("Login realizado com sucesso!")
 					contador = 4
-					escreva("\nBem-vindo, " + usuario + "!")
+					escreva("\nBem-vindo, " + usuario + "!\n")
 				} senao
 					{
-						escreva("\nFalha no login")
+						escreva("\nFalha no login\n")
+						escreva("Você possui 3 tentativas, caso contrário, a sua conta será suspensa!")
+						escreva("\nNumero de tentativas = " + contador + "\n")
+						contador++
 					}
 					
 		} enquanto(contador<4)
@@ -31,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 428; 
+ * @POSICAO-CURSOR = 203; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

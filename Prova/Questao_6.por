@@ -4,8 +4,8 @@ programa
 	funcao inicio()
 	{
 		
-		real QtdadeDenumeros, numero, soma = 0, mediaNumeros = 0
-		inteiro valoresLidos, contador=0
+		real numero, soma = 0.0, mediaNumeros = 0.0
+		inteiro contador=0
 
 			faca
 			{
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 14; 
+ * @POSICAO-CURSOR = 103; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
