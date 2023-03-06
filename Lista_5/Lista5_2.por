@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util
+	inclua biblioteca Util
 	
 	funcao inicio()
 	{
@@ -17,7 +17,7 @@ programa
 				matriz[linha][coluna] = Util.sorteia(1, 9)
 			}
 		}
-		escreva("Selecione uma diagonal:\n\n\t1. Diagonal principal\n\n\t2. Diagonal secundária\n\nOpção selecionada: ")
+		escreva("Selecione uma diagonal:\n\n\t1. Diagonal principal\n\t2. Diagonal secundária\n\t3. Sair\n\nOpção selecionada: ")
 		leia(escolhaDiagonal)
 		limpa()
 		escolha(escolhaDiagonal){
@@ -55,7 +55,7 @@ programa
 					
 			pare
 
-			caso contrario: escreva("\nOpção inválida!")
+			caso contrario: escreva("\nO usuário saiu com sucesso!")
 			
 		}
 		
@@ -66,7 +66,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 816; 
+ * @POSICAO-CURSOR = 512; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
