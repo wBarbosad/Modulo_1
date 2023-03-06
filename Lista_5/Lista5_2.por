@@ -10,7 +10,7 @@ programa
 		inteiro matriz[TamanhoLinha][TamanhoColuna], escolhaDiagonal
 		inteiro somaPrincipal = 0, somaSecundaria = 0
 
-		escreva("Bem-vindo ao Aposta de Matrizes!")
+		escreva("Bem-vindo ao Aposta de Matrizes!\n\n")
 
 		para(inteiro linha = 0; linha<TamanhoLinha; linha++){
 			para(inteiro coluna = 0; coluna<TamanhoColuna; coluna++){
@@ -19,7 +19,7 @@ programa
 		}
 		escreva("Selecione uma diagonal:\n\n\t1. Diagonal principal\n\n\t2. Diagonal secundária\n\nOpção selecionada: ")
 		leia(escolhaDiagonal)
-		
+		limpa()
 		escolha(escolhaDiagonal){
 			caso 1: 
 				escreva("\n\nOpção selecionada: diagonal principal!\n")
@@ -66,9 +66,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1041; 
+ * @POSICAO-CURSOR = 816; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {matriz, 10, 10, 6};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
