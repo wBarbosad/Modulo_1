@@ -25,10 +25,10 @@ programa
 		para (inteiro i = 0; i<QuantidadeAlunos; i++){
 			se(nomeAluno==nome[i] e cpfAluno==cpf[i]){
 				escreva("Aluno matriculado!")
-				i=QuantidadeAlunos
+				pare //Comentário da lista 4.
 			} senao se(nomeAluno!=nome[i] ou cpfAluno!=cpf[i]){
 				escreva("Aluno não matriculado!") 
-				i=QuantidadeAlunos
+				pare 
 			}
 		}
 	}
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 567; 
+ * @POSICAO-CURSOR = 331; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
