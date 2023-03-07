@@ -3,43 +3,34 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro Alunos = 5
+		const inteiro QuantidadeAlunos = 2
+		
+		
 	
-		cadeia nome[Alunos], nomeAluno, cpfAluno
-		cadeia cpf[Alunos]
+		cadeia nome[QuantidadeAlunos], nomeAluno
+		inteiro cpf[QuantidadeAlunos], cpfAluno
+
+		para (inteiro i = 0; i<QuantidadeAlunos; i++){
+			escreva("Informe o nome do aluno: ")
+			leia(nome[i])
+			escreva("Informe o CPF do aluno: ")
+			leia(cpf[i])
+		}
 		
-		
-		nome[0] = "Maria"
-		cpf[0] = "31262929032"
-		nome[1] = "João"
-		cpf[1] = "42868459811"
-		nome[2] = "Amanda"
-		cpf[2] = "35958322831"
-		nome[3] = "Vitoria"
-		cpf[3] = "11345111323"
-		nome[4] = "Silas"
-		cpf[4] = "35796929855"
-		
-		escreva("Informe o seu nome: ")
+		escreva("\nInforme o seu nome: ")
 		leia(nomeAluno)
 		escreva("Informe o seu CPF: ")
 		leia(cpfAluno)
 		
-		para(inteiro i = 0; i<Alunos; i++){
-			se(nome[i]==nomeAluno){
-				para(inteiro j=0; j<Alunos; j++){
-					se(cpf[j]==cpfAluno){
-						escreva("Aluno matriculado!")
-					} 
-				} 
-			} senao{
-				escreva("Aluno não matriculado!")
-				i = Alunos
-				
+		para (inteiro i = 0; i<QuantidadeAlunos; i++){
+			se(nomeAluno==nome[i] e cpfAluno==cpf[i]){
+				escreva("Aluno matriculado!")
+				i=QuantidadeAlunos
+			} senao se(nomeAluno!=nome[i] ou cpfAluno!=cpf[i]){
+				escreva("Aluno não matriculado!") 
+				i=QuantidadeAlunos
 			}
-				
 		}
-
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -47,9 +38,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 555; 
+ * @POSICAO-CURSOR = 567; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {i, 28, 15, 1}-{j, 30, 17, 1};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
