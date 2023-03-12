@@ -8,9 +8,11 @@ programa
 		se(numero2>numero1 e numero2>numero3){
 			retorne numero2
 		}
-		se(numero3>numero1 e numero3>numero2){
+		se(numero3>=numero1 e numero3>numero2){
 			retorne numero3
-		} 
+		} se(numero3==numero1 e numero2==numero1){
+			retorne numero3
+		}
 	retorne 0
 	}
 		
@@ -36,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 303; 
+ * @POSICAO-CURSOR = 387; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
