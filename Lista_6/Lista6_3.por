@@ -3,20 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro TAMANHO_VETOR = 3 //Alturar para 10
+		const inteiro TAMANHO_VETOR = 4//Alturar para 10
 		inteiro etiqueta[TAMANHO_VETOR]
 		inteiro ResultadoMaiorValor, ResultadoMenorValor, ResultadoSomaVetor
 		real ResultadoMedia
 
 		para(inteiro i=0; i<TAMANHO_VETOR; i++){
-			escreva("Informe um valor para o vetor [" + i + "] = ")
-			leia(etiqueta[i]) 
-		}
-		
+			escreva("Informe valores para a Etiqueta[" + i + "] = ")
+			leia(etiqueta[i])
+		}	
+	
 		ResultadoMaiorValor = Maior(etiqueta, TAMANHO_VETOR)
 		ResultadoMenorValor = Menor(etiqueta, TAMANHO_VETOR, ResultadoMaiorValor)
 		ResultadoSomaVetor = Soma(etiqueta, TAMANHO_VETOR)
-		ResultadoMedia = Media(ResultadoSomaVetor, TAMANHO_VETOR)
+		ResultadoMedia = Media(etiqueta, TAMANHO_VETOR)
 		
 		escreva("O maior valor desse vetor = ", ResultadoMaiorValor)
 		escreva("\nO menor valor desse vetor = ", ResultadoMenorValor) //programa aqui.
@@ -36,13 +36,10 @@ programa
 		
 	}
 	funcao inteiro Menor(inteiro vetorEtiqueta[], inteiro tamanhoVetor, inteiro MaiorValor){
-		inteiro menorValor = 0
+		inteiro 
 		para(inteiro j=0; j<tamanhoVetor; j++){
-			se(vetorEtiqueta[j]<MaiorValor){
-				menorValor = vetorEtiqueta[j]
-			}
+			
 		}
-		retorne menorValor
 	}
 	funcao inteiro Soma(inteiro vetorEtiqueta[], inteiro tamanhoVetor){
 		
@@ -52,9 +49,14 @@ programa
 		}
 	retorne	somatorio
 	}
-	funcao real Media(inteiro Somatorio, inteiro tamanhoVetor){
-		real media = Somatorio/tamanhoVetor
-		retorne media
+	funcao real Media(inteiro vetorEtiqueta[], inteiro tamanhoVetor){
+		real soma = 0.0, media = 0.0
+		para(inteiro j=0; j<tamanhoVetor; j++){
+			 soma = soma+vetorEtiqueta[j]	
+		}
+		media = soma/tamanhoVetor
+		
+	retorne media
 	}
 }
 
@@ -63,10 +65,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1136; 
- * @DOBRAMENTO-CODIGO = [27, 46, 54];
+ * @POSICAO-CURSOR = 1247; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {vetorEtiqueta, 28, 30, 13};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
