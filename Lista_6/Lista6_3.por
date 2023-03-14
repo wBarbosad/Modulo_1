@@ -3,7 +3,7 @@ programa
 	
 	funcao inicio()
 	{
-		const inteiro TAMANHO_VETOR = 4//Alturar para 10
+		const inteiro TAMANHO_VETOR = 10
 		inteiro etiqueta[TAMANHO_VETOR]
 		inteiro ResultadoMaiorValor, ResultadoMenorValor, ResultadoSomaVetor
 		real ResultadoMedia
