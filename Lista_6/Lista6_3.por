@@ -36,10 +36,13 @@ programa
 		
 	}
 	funcao inteiro Menor(inteiro vetorEtiqueta[], inteiro tamanhoVetor, inteiro MaiorValor){
-		inteiro 
-		para(inteiro j=0; j<tamanhoVetor; j++){
-			
+		inteiro menorNota = MaiorValor
+		para(inteiro i=0; i<tamanhoVetor; i++){
+			se(vetorEtiqueta[i]<menorNota){
+				menorNota = vetorEtiqueta[i]
+			}
 		}
+		retorne menorNota
 	}
 	funcao inteiro Soma(inteiro vetorEtiqueta[], inteiro tamanhoVetor){
 		
@@ -65,9 +68,10 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1247; 
+ * @POSICAO-CURSOR = 1334; 
+ * @DOBRAMENTO-CODIGO = [27, 46, 54];
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vetorEtiqueta, 28, 30, 13};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
